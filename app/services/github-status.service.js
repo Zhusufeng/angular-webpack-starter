@@ -14,7 +14,8 @@ function GithubStatusService($http) {
     }
 }
 
-angular.module('dashboard').service('GithubStatusService', GithubStatusService);
+// angular.module('dashboard').service('GithubStatusService', GithubStatusService);
+module.exports = GithubStatusService;
 
 function appendTransform(defaults, transform) {
   defaults = angular.isArray(defaults) ? defaults : [defaults];
