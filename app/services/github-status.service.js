@@ -6,7 +6,8 @@ function GithubStatusService($http) {
     _this.getStatus = function getStatus() {
         return $http({
             method: 'jsonp',
-            url: 'https://status.github.com/api/status.json?callback=JSON_CALLBACK',
+            // url: 'https://status.github.com/api/status.json?callback=JSON_CALLBACK',
+            url: 'https://status.github.com/api/status.json',
             transformResponse: appendTransform($http.defaults.transformResponse, function(value) {
                 return (value.status === 'good');
             })
