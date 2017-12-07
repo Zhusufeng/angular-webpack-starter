@@ -1,4 +1,6 @@
-angular.module('dashboard', []);
+angular.module('dashboard', []).config(function($sceProvider) {
+  $sceProvider.enabled(false);
+});
 
 /* Require entry pts */
 require('./directives');
