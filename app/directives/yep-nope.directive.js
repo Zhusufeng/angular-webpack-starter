@@ -10,4 +10,6 @@ function YepNopeDirective() {
   }
 }
 
+module.exports = YepNopeDirective;
+
 // angular.module('dashboard').directive('yepNope', YepNopeDirective);
